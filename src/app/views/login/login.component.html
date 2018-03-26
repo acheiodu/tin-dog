@@ -1,0 +1,24 @@
+<div class="background">
+	<div class="col-12">
+		<div class="logo-name">TinDog</div>
+	</div>
+	<div class="col-12">
+		<div class="col-6">
+			<img src="/assets/images/background.jpg" width="512">
+		</div>
+		<div class="login-box">
+			<div class="login-item">
+				<div class="login-label">Usuário:</div>
+				<input class="login-input" type="text" #username>
+			</div>
+			<div class="login-item">
+				<div class="login-label">Senha:</div>
+				<input class="login-input" type="password" #password>
+			</div>
+		</div>
+		<button class="login-bar" (click)="login()">Entrar</button>
+		<div class="col-6">
+			<button class="register-button" routerLink="add-user">Registrar-se</button>
+		</div>
+	</div>
+</div>
