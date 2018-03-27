@@ -1,24 +1,20 @@
 <div class="background">
-	<div class="col-12">
-		<div class="logo-name">TinDog</div>
-	</div>
-	<div class="col-12">
-		<div class="col-6">
-			<img src="/assets/images/background.jpg" width="512">
-		</div>
-		<div class="login-box">
-			<div class="login-item">
-				<div class="login-label">Usuário:</div>
-				<input class="login-input" type="text" #username>
-			</div>
-			<div class="login-item">
-				<div class="login-label">Senha:</div>
-				<input class="login-input" type="password" #password>
-			</div>
-		</div>
-		<button class="login-bar" (click)="login()">Entrar</button>
-		<div class="col-6">
-			<button class="register-button" routerLink="add-user">Registrar-se</button>
-		</div>
-	</div>
+  <div class="header">TinDog</div>
+  <img src="/assets/images/background.jpg">
+  <div class="login-box">
+    <div class="login-items">
+      <div class="login-item">
+        <div class="login-label">Usuário:</div>
+        <input class="login-input" type="text" #username>
+      </div>
+      <div class="login-item">
+        <div class="login-label">Senha:</div>
+        <input class="login-input" type="password" #password>
+      </div>
+    </div>
+  </div>
+  <button class="button-sign-in">Login</button>
+  <button class="button-sign-up" routerLink="add-user">Entrar</button>
+  <button class="button-sign-in">Cadastrar-se</button>
+  <button class="button-reset-password">Esqueceu a Senha?</button>
 </div>

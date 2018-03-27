@@ -1,17 +1,25 @@
 .background {
-	background-color: rgb(250, 161, 65);
-	min-height: 100vh;
+  background-color: rgb(250, 161, 65);
+  display: grid;
+  grid-template-columns: repeat(4, 256px);
+  grid-template-rows: 200px 200px 88px auto;
+  min-height: 100vh;
+  width: 1024px;
 }
 
-.col-6 {
-	float: left;
-	vertical-align: top;
-	width: 512px;
+.title {
+  align-self: center;
 }
 
-.col-12 {
-	background-color: rgb(250, 161, 65);
-	float: left;
+.header {
+  background-color: rgb(187, 110, 22);
+  color: rgb(255, 255, 255);
+  display: grid;
+	font-family: 'Open Sans Light';
+	font-size: 3em;
+  grid-column: span 4;
+  padding: 75px 20px;
+	text-align: center;
 }
 
 .forgot-password {
@@ -19,74 +27,70 @@
 }
 
 img {
-	opacity: 0.5;
+  grid-column: span 2;
+  grid-row: span 2;
+  max-width: 100%;
+  max-height: 100%;
+	opacity: 0.75;
 }
 
 input {
-	border: none;
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
 	outline: none;
 	padding: 5px;
 }
 
-.login-bar {
+.button-sign-in {
 	background-color: rgb(213, 130, 41);
 	border: none;
 	color: rgb(255, 255, 255);
-	cursor: pointer;
-	display: table-cell;
-	float: left;
 	font-family: 'Open Sans Light';
 	font-size: 1.5em;
-	height: 170px;
 	outline: none;
-	padding: 20px;
 	text-align: center;
-	vertical-align: middle;
-	width: 212px;
+}
+
+.button-sign-up {
+	background-color: rgb(187, 110, 22);
+	border: none;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-family: 'Open Sans Light';
+  font-size: 1.5em;
+  grid-column: span 2;
+  outline: none;
+	text-align: center;
+}
+
+.button-reset-password {
+  background: none;
+	border: none;
+	color: rgb(255, 255, 255);
+	cursor: pointer;
+	font-family: 'Open Sans Light';
+  font-size: 1.5em;
+  grid-column: span 3;
+  outline: none;
+	text-align: center;
 }
 
 .login-box {
-	display: table-cell;
-	height: 170px;
-	text-align: center;
-	vertical-align: middle;
-	width: 300px;
+  align-content: center;
+	display: grid;
 }
 
 .login-item {
-	display: inline-block;
 	margin-bottom: 10px;
+}
+
+.login-items {
+  padding: 20px;
 }
 
 .login-label {
 	color: rgb(255, 255, 255);
 	text-align: left;
 	margin-bottom: 5px;
-}
-
-.logo-name {
-	background-color: rgb(187, 110, 22);
-	color: rgb(255, 255, 255);
-	display: table-cell;
-	font-family: 'Open Sans Light';
-	font-size: 3em;
-	height: 200px;
-	text-align: center;
-	vertical-align: middle;
-	width: 1024px;
-}
-
-.register-button {
-	background-color: rgb(187, 110, 22);
-	border: none;
-	color: rgb(255, 255, 255);
-	cursor: pointer;
-	display: table-cell;
-	font-family: 'Open Sans Light';
-	font-size: 1.5em;
-	height: 118px;
-	outline: none;
-	text-align: center;
-	vertical-align: middle;
-	width: 512px;
 }
